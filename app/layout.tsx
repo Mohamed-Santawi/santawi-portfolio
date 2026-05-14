@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} scroll-smooth antialiased`}>
-      <body className="min-h-screen flex flex-col bg-slate-900 text-slate-50 font-sans selection:bg-sky-500/30">
+      <body className="min-h-screen flex flex-col bg-slate-900 text-slate-50 font-sans selection:bg-yellow-500/30">
         <Navbar />
         <main className="flex-grow pt-20">{children}</main>
       </body>

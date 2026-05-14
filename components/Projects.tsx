@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import Section from "./ui/Section";
 
@@ -8,6 +9,7 @@ const projects = [
     tech: ["React.js", "Node.js", "Firebase"],
     github: "#",
     live: "#",
+    image: "/projects/go_umrah.png",
   },
   {
     title: "Car Marketplace",
@@ -15,6 +17,7 @@ const projects = [
     tech: ["React.js", "Firebase", "Tailwind CSS"],
     github: "#",
     live: "#",
+    image: "/projects/car_marketplace.png",
   },
   {
     title: "Autonique – Cybersecurity",
@@ -22,6 +25,7 @@ const projects = [
     tech: ["React.js", "Firebase", "Tailwind CSS"],
     github: "#",
     live: "#",
+    image: "/projects/autonique.png",
   },
   {
     title: "FinWise – AI Financial Planning",
@@ -29,6 +33,7 @@ const projects = [
     tech: ["React.js", "Node.js", "Tailwind CSS", "OpenAI"],
     github: "#",
     live: "#",
+    image: "/projects/finwise.png",
   },
   {
     title: "Diagnostic Testing Platform",
@@ -36,6 +41,7 @@ const projects = [
     tech: ["React.js", "Vite", "Tailwind CSS"],
     github: "#",
     live: "#",
+    image: "/projects/diagnostic.png",
   },
   {
     title: "Modern E-commerce",
@@ -43,6 +49,7 @@ const projects = [
     tech: ["React.js", "Firebase", "Tailwind CSS", "PayPal"],
     github: "#",
     live: "#",
+    image: "/projects/ecommerce.png",
   },
 ];
 
@@ -55,36 +62,47 @@ export default function Projects() {
           <div className="h-[1px] bg-slate-700 flex-1"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="glass-card rounded-2xl p-6 flex flex-col group hover:-translate-y-2 transition-transform duration-300">
-              <div className="flex justify-between items-center mb-6 text-slate-400">
-                <span className="text-4xl text-sky-500">📁</span>
-                <div className="flex gap-4">
-                  <a href={project.github} className="hover:text-sky-400 transition-colors" aria-label="GitHub">
-                    <FiGithub size={22} />
-                  </a>
-                  <a href={project.live} className="hover:text-sky-400 transition-colors" aria-label="Live Demo">
-                    <FiExternalLink size={22} />
-                  </a>
-                </div>
+            <div key={index} className="glass-card rounded-2xl overflow-hidden flex flex-col group hover:-translate-y-2 transition-transform duration-300">
+              
+              <div className="relative w-full h-48 border-b border-slate-700">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-slate-900/40 group-hover:bg-slate-900/10 transition-colors"></div>
               </div>
-              
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-sky-400 transition-colors">
-                {project.title}
-              </h3>
-              
-              <p className="text-slate-300 mb-6 flex-1 text-sm leading-relaxed">
-                {project.description}
-              </p>
-              
-              <ul className="flex flex-wrap gap-3 mt-auto">
-                {project.tech.map((tech, i) => (
-                  <li key={i} className="text-xs font-mono text-sky-300 bg-sky-900/30 px-2 py-1 rounded">
-                    {tech}
-                  </li>
-                ))}
-              </ul>
+
+              <div className="p-6 flex flex-col flex-1">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors">
+                    {project.title}
+                  </h3>
+                  <div className="flex gap-3 text-slate-400">
+                    <a href={project.github} className="hover:text-yellow-400 transition-colors" aria-label="GitHub">
+                      <FiGithub size={20} />
+                    </a>
+                    <a href={project.live} className="hover:text-yellow-400 transition-colors" aria-label="Live Demo">
+                      <FiExternalLink size={20} />
+                    </a>
+                  </div>
+                </div>
+                
+                <p className="text-slate-300 mb-6 flex-1 text-sm leading-relaxed">
+                  {project.description}
+                </p>
+                
+                <ul className="flex flex-wrap gap-2 mt-auto">
+                  {project.tech.map((tech, i) => (
+                    <li key={i} className="text-xs font-mono text-yellow-300 bg-yellow-900/30 px-2 py-1 rounded border border-yellow-500/20">
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>

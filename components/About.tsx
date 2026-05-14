@@ -15,7 +15,7 @@ export default function About() {
               I am a <span className="text-white font-medium">Junior Frontend Developer</span> with a unique background—bringing 13 years of experience as a Shift Leader Engineer in the cement industry. This experience has instilled in me strong problem-solving skills, leadership, and a meticulous attention to detail.
             </p>
             <p>
-              Passionate about technology, I have been programming for over 3 years, starting with C and C++, and currently focusing on building modern web applications. My core stack involves <span className="text-sky-400">Next.js, React, TypeScript, and Tailwind CSS</span>.
+              Passionate about technology, I have been programming for over 3 years, starting with C and C++, and currently focusing on building modern web applications. My core stack involves <span className="text-yellow-400">Next.js, React, TypeScript, and Tailwind CSS</span>.
             </p>
             <p>
               I also have hands-on experience integrating LLM services via APIs within web applications, eager to contribute to impactful projects, collaborate with cross-functional teams, and continuously grow as a frontend developer.
@@ -26,19 +26,19 @@ export default function About() {
             <h3 className="text-xl font-semibold text-white mb-6">Quick Facts</h3>
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
-                <span className="text-sky-500">▹</span>
+                <span className="text-yellow-500">▹</span>
                 <span className="text-slate-300">Based in Egypt</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-sky-500">▹</span>
+                <span className="text-yellow-500">▹</span>
                 <span className="text-slate-300">Over 20+ successful freelance projects</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-sky-500">▹</span>
+                <span className="text-yellow-500">▹</span>
                 <span className="text-slate-300">Specializes in responsive, Arabic RTL design</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-sky-500">▹</span>
+                <span className="text-yellow-500">▹</span>
                 <span className="text-slate-300">Transitioned from heavy industry to tech</span>
               </li>
             </ul>

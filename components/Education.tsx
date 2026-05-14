@@ -44,10 +44,10 @@ export default function Education() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {education.map((item, index) => (
-            <div key={index} className="glass-card rounded-2xl p-6 border-l-4 border-l-sky-500">
+            <div key={index} className="glass-card rounded-2xl p-6 border-l-4 border-l-yellow-500">
               <h3 className="text-xl font-bold text-white mb-2">{item.degree}</h3>
               <div className="flex justify-between items-center mb-4">
-                <span className="text-sky-400 font-medium">{item.institution}</span>
+                <span className="text-yellow-400 font-medium">{item.institution}</span>
                 <span className="text-slate-500 text-sm">{item.location}</span>
               </div>
               
@@ -55,7 +55,7 @@ export default function Education() {
                 <ul className="mt-4 space-y-2">
                   {item.highlights.map((highlight, i) => (
                     <li key={i} className="flex gap-2 text-slate-300 text-sm">
-                      <span className="text-sky-500">▹</span>
+                      <span className="text-yellow-500">▹</span>
                       <span>{highlight}</span>
                     </li>
                   ))}

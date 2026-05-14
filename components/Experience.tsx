@@ -38,18 +38,18 @@ export default function Experience() {
             <div key={index} className="relative pl-8 md:pl-0">
               <div className="md:grid md:grid-cols-4 md:gap-8 items-start">
                 <div className="mb-4 md:mb-0 md:col-span-1 md:text-right mt-1">
-                  <span className="text-sky-400 font-mono text-sm">{exp.period}</span>
+                  <span className="text-yellow-400 font-mono text-sm">{exp.period}</span>
                 </div>
                 <div className="md:col-span-3 glass-card rounded-2xl p-6 relative">
                   {/* Timeline dot */}
-                  <div className="absolute -left-[41px] md:-left-4 top-6 w-4 h-4 rounded-full bg-sky-500 border-4 border-slate-900 z-10 hidden md:block"></div>
+                  <div className="absolute -left-[41px] md:-left-4 top-6 w-4 h-4 rounded-full bg-yellow-500 border-4 border-slate-900 z-10 hidden md:block"></div>
                   
                   <h3 className="text-xl font-bold text-white mb-1">{exp.role}</h3>
                   <h4 className="text-lg text-slate-400 font-medium mb-4">{exp.company}</h4>
                   <ul className="space-y-3">
                     {exp.description.map((item, i) => (
                       <li key={i} className="flex gap-3 text-slate-300">
-                        <span className="text-sky-500 mt-1">▹</span>
+                        <span className="text-yellow-500 mt-1">▹</span>
                         <span className="leading-relaxed">{item}</span>
                       </li>
                     ))}

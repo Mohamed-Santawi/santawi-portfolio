@@ -12,41 +12,43 @@ export default function Contact() {
 
         <a
           href="mailto:mosantawi@gmail.com"
-          className="inline-block px-8 py-4 bg-transparent border-2 border-sky-500 text-sky-400 hover:bg-sky-500/10 rounded-full font-bold text-lg transition-colors mb-16"
+          className="inline-block px-8 py-4 bg-transparent border-2 border-yellow-500 text-yellow-400 hover:bg-yellow-500/10 rounded-full font-bold text-lg transition-colors mb-16"
         >
           Say Hello
         </a>
 
         <div className="flex justify-center gap-8 mb-12">
           <a
-            href="https://github.com/Mohamed-Santawi"
+            href="https://github.com/Mohamed-Santawi/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-400 hover:text-sky-400 transition-colors"
+            className="text-slate-400 hover:text-yellow-400 transition-colors"
             aria-label="GitHub"
           >
             <FiGithub size={28} />
           </a>
           <a
-            href="https://linkedin.com/in/mohamed-santawi"
+            href="https://www.linkedin.com/in/mohamed-santawi-b1ab27303/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-400 hover:text-sky-400 transition-colors"
+            className="text-slate-400 hover:text-yellow-400 transition-colors"
             aria-label="LinkedIn"
           >
             <FiLinkedin size={28} />
           </a>
           <a
             href="mailto:mosantawi@gmail.com"
-            className="text-slate-400 hover:text-sky-400 transition-colors"
+            className="text-slate-400 hover:text-yellow-400 transition-colors"
             aria-label="Email"
           >
             <FiMail size={28} />
           </a>
           <a
-            href="tel:+201009193767"
-            className="text-slate-400 hover:text-sky-400 transition-colors"
-            aria-label="Phone"
+            href="https://wa.me/201009193767"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-400 hover:text-yellow-400 transition-colors"
+            aria-label="WhatsApp"
           >
             <FiPhone size={28} />
           </a>

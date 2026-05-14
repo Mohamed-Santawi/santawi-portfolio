@@ -33,7 +33,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <Link href="#" className="text-2xl font-bold text-white tracking-tighter">
-          Santawi<span className="text-sky-500">.</span>
+          Santawi<span className="text-yellow-500">.</span>
         </Link>
 
         {/* Desktop Nav */}
@@ -42,14 +42,14 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-slate-300 hover:text-sky-400 transition-colors"
+              className="text-sm font-medium text-slate-300 hover:text-yellow-400 transition-colors"
             >
               {link.name}
             </Link>
           ))}
           <Link
             href="#contact"
-            className="px-5 py-2 text-sm font-medium text-white bg-sky-600 hover:bg-sky-500 rounded-full transition-colors shadow-lg shadow-sky-500/30"
+            className="px-5 py-2 text-sm font-medium text-white bg-yellow-600 hover:bg-yellow-500 rounded-full transition-colors shadow-lg shadow-yellow-500/30"
           >
             Hire Me
           </Link>
@@ -72,7 +72,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-base font-medium text-slate-300 hover:text-sky-400 transition-colors"
+                className="text-base font-medium text-slate-300 hover:text-yellow-400 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}

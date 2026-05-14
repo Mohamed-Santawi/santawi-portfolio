@@ -5,7 +5,8 @@
   --foreground: #f8fafc; /* Slate 50 */
   --primary: #0ea5e9; /* Sky 500 */
   --primary-glow: rgba(14, 165, 233, 0.5);
-  --secondary: #3b82f6; /* Blue 500 */
+  --secondary: #eab308; /* Yellow 500 */
+  --secondary-glow: rgba(234, 179, 8, 0.5);
   --card: rgba(30, 41, 59, 0.7); /* Slate 800 with opacity */
   --card-border: rgba(51, 65, 85, 0.5); /* Slate 700 with opacity */
 }
@@ -57,7 +58,7 @@ body {
 
 /* Text Gradient utility */
 .text-gradient {
-  background: linear-gradient(to right, #38bdf8, #818cf8);
+  background: linear-gradient(to right, #38bdf8, #fde047);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

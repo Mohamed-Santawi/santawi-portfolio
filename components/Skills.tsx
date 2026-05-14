@@ -40,7 +40,7 @@ export default function Skills() {
                     key={i}
                     className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                       category.title === "Core Stack"
-                        ? "bg-sky-500/20 text-sky-300 border border-sky-500/30"
+                        ? "bg-yellow-500/20 text-yellow-300 border border-yellow-500/30"
                         : "bg-slate-800 text-slate-300 border border-slate-700"
                     }`}
                   >
