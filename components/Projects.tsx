@@ -4,53 +4,93 @@ import Section from "./ui/Section";
 
 const projects = [
   {
-    title: "Go Umrah – Travel Booking",
+    title: "Go Umrah – Travel Booking Application",
     description: "Developed a full-stack travel booking platform with authentication, booking management, and secure payment integration. Built a responsive admin dashboard with dynamic form generation.",
     tech: ["React.js", "Node.js", "Firebase"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/Mohamed-Santawi/Go-Umrah",
+    live: "https://go-umrah.com",
     image: "/projects/go_umrah.png",
   },
   {
-    title: "Car Marketplace",
-    description: "Built a full-stack car marketplace tailored for the Saudi Arabian market. Implemented real-time listings, advanced filtering, and Firebase-based authentication with Framer Motion animations.",
+    title: "Marwan Educational Platform – E-Learning System",
+    description: "Built a full-stack educational platform featuring role-based dashboards. Developed a comprehensive exam management system and integrated OpenAI API for an intelligent math tutor assistant.",
+    tech: ["React.ts", "Firebase", "Tailwind CSS", "OpenAI API"],
+    github: "https://github.com/Mohamed-Santawi/marwan-platform",
+    live: "https://marwanlearn.online/",
+    image: "/projects/marwan.png",
+  },
+  {
+    title: "Corporate Cement Portfolio",
+    description: "Developed a modern, responsive corporate portfolio website for a cement manufacturing business. Implemented dynamic UI components with Framer Motion.",
+    tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/Mohamed-Santawi/personal-portfolio",
+    live: "https://mohamed-elsantawy-portfolio.vercel.app",
+    image: "/projects/cement.png",
+  },
+  {
+    title: "Fake Radar – Deepfake Detection Platform",
+    description: "Developed an Arabic RTL deepfake detection web application using Next.js App Router. Engineered a robust multi-provider API fallback chain and server-side media processing.",
+    tech: ["Next.js", "React", "Tailwind CSS"],
+    github: "https://github.com/Mohamed-Santawi/fake-radar",
+    live: "https://fakeradar-chi.vercel.app/",
+    image: "/projects/fake_radar.png",
+  },
+  {
+    title: "Kashif Ash3a",
+    description: "Developed a fast and responsive single-page web application. Built dynamic user interfaces with fluid animations and integrated a Firebase backend for user authentication and real-time database operations.",
+    tech: ["React.js", "Vite", "Tailwind CSS", "Firebase"],
+    github: "https://github.com/Mohamed-Santawi/kashif-ash3a",
+    live: "https://kashif-ash3a.vercel.app",
+    image: "/projects/kashif.png",
+  },
+  {
+    title: "Car Marketplace Web Application",
+    description: "Built a full-stack car marketplace tailored for the Saudi Arabian market. Implemented real-time listings, advanced filtering, and Firebase-based authentication.",
     tech: ["React.js", "Firebase", "Tailwind CSS"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/Mohamed-Santawi/Car-Marketplace",
+    live: "https://car-market-xi.vercel.app/",
     image: "/projects/car_marketplace.png",
   },
   {
-    title: "Autonique – Cybersecurity",
-    description: "Developed a cybersecurity-focused web platform using React and Firebase Firestore. Built a real-time admin dashboard and implemented a responsive Arabic RTL design.",
+    title: "Autonique – Cybersecurity Solutions Website",
+    description: "Developed a cybersecurity-focused web platform using React and Firebase Firestore. Built a real-time admin dashboard with dynamic content management capabilities.",
     tech: ["React.js", "Firebase", "Tailwind CSS"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/Mohamed-Santawi/Autonique",
+    live: "https://autonique-version.vercel.app/",
     image: "/projects/autonique.png",
   },
   {
-    title: "FinWise – AI Financial Planning",
-    description: "AI-driven platform for personalized financial planning. Built a multi-step budget calculator and integrated OpenAI API through an Express.js proxy for intelligent recommendations.",
-    tech: ["React.js", "Node.js", "Tailwind CSS", "OpenAI"],
-    github: "#",
-    live: "#",
+    title: "FinWise – AI-Powered Financial Planning Platform",
+    description: "Developed an AI-driven platform for personalized financial planning and budgeting. Built a multi-step budget calculator and integrated OpenAI API for intelligent recommendations.",
+    tech: ["React.js", "Node.js", "Tailwind CSS"],
+    github: "https://github.com/Mohamed-Santawi/finwise",
+    live: "https://finwise-inky.vercel.app/",
     image: "/projects/finwise.png",
   },
   {
-    title: "Diagnostic Testing Platform",
-    description: "Educational diagnostic testing platform with multiple interactive assessment types including reading comprehension, MCQs, and real-time validation.",
+    title: "Learning Difficulties Diagnostic Testing Platform",
+    description: "Built an educational diagnostic testing platform with multiple interactive assessment types. Implemented reading comprehension, MCQs, and text-based tests with real-time validation.",
     tech: ["React.js", "Vite", "Tailwind CSS"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/Mohamed-Santawi/Exam-project",
+    live: "https://exam-project-psi-smoky.vercel.app/",
     image: "/projects/diagnostic.png",
   },
   {
-    title: "Modern E-commerce",
-    description: "Production-ready e-commerce platform with Arabic and English support. Integrated secure PayPal payment processing and managed state using React Context API.",
+    title: "E-commerce Website",
+    description: "Developed a production-ready e-commerce platform with Arabic and English support. Implemented Firebase authentication and integrated secure PayPal payment processing.",
     tech: ["React.js", "Firebase", "Tailwind CSS", "PayPal"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/YourUsername/E-commerce",
+    live: "https://your-ecommerce-demo.com",
     image: "/projects/ecommerce.png",
   },
+  {
+    title: "Notes App",
+    description: "Built a responsive note-taking application with a clean, minimal UI. Implemented full CRUD functionality with React Router navigation and efficient state management.",
+    tech: ["React.js", "Tailwind CSS"],
+    github: "https://github.com/YourUsername/Notes-App",
+    live: "https://your-notes-demo.com",
+    image: "/projects/notes.png",
+  }
 ];
 
 export default function Projects() {
@@ -82,12 +122,26 @@ export default function Projects() {
                     {project.title}
                   </h3>
                   <div className="flex gap-3 text-slate-400">
-                    <a href={project.github} className="hover:text-yellow-400 transition-colors" aria-label="GitHub">
-                      <FiGithub size={20} />
-                    </a>
-                    <a href={project.live} className="hover:text-yellow-400 transition-colors" aria-label="Live Demo">
-                      <FiExternalLink size={20} />
-                    </a>
+                    {project.github !== "#" && (
+                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition-colors" aria-label="GitHub">
+                        <FiGithub size={20} />
+                      </a>
+                    )}
+                    {project.live !== "#" && (
+                      <a href={project.live} target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition-colors" aria-label="Live Demo">
+                        <FiExternalLink size={20} />
+                      </a>
+                    )}
+                    {project.github === "#" && (
+                      <span className="cursor-not-allowed hover:text-slate-500 transition-colors" aria-label="GitHub (No Link)">
+                        <FiGithub size={20} />
+                      </span>
+                    )}
+                    {project.live === "#" && (
+                      <span className="cursor-not-allowed hover:text-slate-500 transition-colors" aria-label="Live Demo (No Link)">
+                        <FiExternalLink size={20} />
+                      </span>
+                    )}
                   </div>
                 </div>
                 
