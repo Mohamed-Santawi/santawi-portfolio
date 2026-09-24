@@ -88,7 +88,7 @@ const projects = [
     description: "Built a responsive note-taking application with a clean, minimal UI. Implemented full CRUD functionality with React Router navigation and efficient state management.",
     tech: ["React.js", "Tailwind CSS"],
     github: "https://github.com/YourUsername/Notes-App",
-    live: "https://your-notes-demo.com",
+    live: "https://notes-app-one-tan.vercel.app/",
     image: "/projects/notes.png",
   }
 ];
