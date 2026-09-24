@@ -48,7 +48,7 @@ const projects = [
     description: "Built a full-stack car marketplace tailored for the Saudi Arabian market. Implemented real-time listings, advanced filtering, and Firebase-based authentication.",
     tech: ["React.js", "Firebase", "Tailwind CSS"],
     github: "https://github.com/Mohamed-Santawi/Car-Marketplace",
-    live: "https://car-market-xi.vercel.app/",
+    live: "https://2ndhand-cars.sa",
     image: "/projects/car_marketplace.png",
   },
   {
@@ -80,7 +80,7 @@ const projects = [
     description: "Developed a production-ready e-commerce platform with Arabic and English support. Implemented Firebase authentication and integrated secure PayPal payment processing.",
     tech: ["React.js", "Firebase", "Tailwind CSS", "PayPal"],
     github: "https://github.com/YourUsername/E-commerce",
-    live: "https://your-ecommerce-demo.com",
+    live: "https://e-commerce2025-pdu8.vercel.app/",
     image: "/projects/ecommerce.png",
   },
   {
