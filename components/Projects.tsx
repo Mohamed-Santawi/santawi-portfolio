@@ -170,6 +170,8 @@ export default function Projects() {
               </div>
             </div>
           ))}
+        </div>
+
         <div className="flex items-center gap-4 mb-12 mt-20">
           <h2 className="text-3xl md:text-4xl font-bold text-white">Automated Projects</h2>
           <div className="h-[1px] bg-slate-700 flex-1"></div>
