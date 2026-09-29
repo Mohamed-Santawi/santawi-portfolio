@@ -2,6 +2,17 @@ import Image from "next/image";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import Section from "./ui/Section";
 
+const automatedProjects = [
+  {
+    title: "Automated Rent Payment Reminder System",
+    description: "Built an n8n-based automation that integrates Google Sheets with Meta WhatsApp Cloud API to automatically identify rental payment deadlines and send personalized WhatsApp reminders to tenants. The system dynamically maps contract and payment data, handles phone-number normalization, and updates payment notification status in Google Sheets after successful delivery.",
+    tech: ["n8n", "Google Sheets API", "WhatsApp Cloud API", "Google OAuth 2.0", "REST APIs"],
+    github: "#",
+    live: "#",
+    images: ["/projects/n8n-workflow.png", "/projects/n8n-workflow-2.png"],
+  }
+];
+
 const projects = [
   {
     title: "Go Umrah – Travel Booking Application",
@@ -152,6 +163,49 @@ export default function Projects() {
                 <ul className="flex flex-wrap gap-2 mt-auto">
                   {project.tech.map((tech, i) => (
                     <li key={i} className="text-xs font-mono text-yellow-300 bg-yellow-900/30 px-2 py-1 rounded border border-yellow-500/20">
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        <div className="flex items-center gap-4 mb-12 mt-20">
+          <h2 className="text-3xl md:text-4xl font-bold text-white">Automated Projects</h2>
+          <div className="h-[1px] bg-slate-700 flex-1"></div>
+        </div>
+
+        <div className="grid lg:grid-cols-1 gap-8">
+          {automatedProjects.map((project, index) => (
+            <div key={index} className="glass-card rounded-2xl overflow-hidden flex flex-col lg:flex-row group transition-transform duration-300">
+              
+              <div className="relative w-full lg:w-1/2 h-64 lg:h-auto border-b lg:border-b-0 lg:border-r border-slate-700 flex flex-col md:flex-row gap-2 bg-slate-900/50 p-4">
+                {project.images.map((img, i) => (
+                  <div key={i} className="relative w-full h-full min-h-[200px] flex-1 rounded-xl overflow-hidden">
+                    <Image
+                      src={img}
+                      alt={`${project.title} - ${i + 1}`}
+                      fill
+                      className="object-contain transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                ))}
+              </div>
+
+              <div className="p-6 md:p-8 flex flex-col flex-1 lg:w-1/2">
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-2xl font-bold text-white group-hover:text-yellow-400 transition-colors">
+                    {project.title}
+                  </h3>
+                </div>
+                
+                <p className="text-slate-300 mb-6 flex-1 text-base leading-relaxed">
+                  {project.description}
+                </p>
+                
+                <ul className="flex flex-wrap gap-2 mt-auto">
+                  {project.tech.map((tech, i) => (
+                    <li key={i} className="text-sm font-mono text-yellow-300 bg-yellow-900/30 px-3 py-1.5 rounded border border-yellow-500/20">
                       {tech}
                     </li>
                   ))}
