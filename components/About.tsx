@@ -27,7 +27,7 @@ export default function About() {
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
                 <span className="text-yellow-500">▹</span>
-                <span className="text-slate-300">Based in Egypt</span>
+                <span className="text-slate-300">I am Egyptian based in Jordan for my work</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-yellow-500">▹</span>
